@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/mojitrk/linuxify-windows/issues"
   },
-  "homepage": "https://github.com/mojitrk/linuxify-windows#readme"
+  "homepage": "https://github.com/mojitrk/linuxify-windows#readme",
+  "dependencies": {
+    "tailwindcss": "^3.0.12"
+  }
 }
