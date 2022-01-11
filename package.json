@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/mojitrk/linuxify-windows#readme",
   "dependencies": {
+    "postcss": "^8.4.5",
     "tailwindcss": "^3.0.12"
   }
 }
