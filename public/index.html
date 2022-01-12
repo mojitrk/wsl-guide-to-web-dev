@@ -15,7 +15,7 @@
     <!-- navigation bar -->
     <header class="text-gray-400 bg-gray-900 body-font">
         <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-            <a class="flex title-font font-medium items-center text-white mb-4 md:mb-0">
+            <a class="flex title-font font-medium items-center text-white mb-4 md:mb-0" href="index.html">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round"
                     stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-pink-500 rounded-full"
                     viewBox="0 0 24 24">
@@ -24,11 +24,11 @@
                 <span class="ml-3 text-xl">Linuxify Windows</span>
             </a>
             <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
-                <a class="mr-5 hover:text-white">Introduction</a>
-                <a class="mr-5 hover:text-white">Rationale</a>
-                <a class="mr-5 hover:text-white">Installation</a>
-                <a class="mr-5 hover:text-white">Configuration</a>
-                <a class="mr-5 hover:text-white">Guide</a>
+                <a class="mr-5 hover:text-white" href="introduction.html">Introduction</a>
+                <a class="mr-5 hover:text-white" href="rationale.html">Rationale</a>
+                <a class="mr-5 hover:text-white" href="installation.html">Installation</a>
+                <a class="mr-5 hover:text-white" href="configuration.html">Configuration</a>
+                <a class="mr-5 hover:text-white" href="guide.html">Guide</a>
             </nav>
         </div>
     </header>
@@ -39,36 +39,24 @@
             <img class="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded" alt="hero"
                 src="https://dummyimage.com/720x600">
             <div class="text-center lg:w-2/3 w-full">
-                <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">Microdosing synth tattooed
-                    vexillologist</h1>
-                <p class="leading-relaxed mb-8">Meggings kinfolk echo park stumptown DIY, kale chips beard jianbing
-                    tousled. Chambray dreamcatcher trust fund, kitsch vice godard disrupt ramps hexagon mustache umami
-                    snackwave tilde chillwave ugh. Pour-over meditation PBR&B pickled ennui celiac mlkshk freegan photo
-                    booth af fingerstache pitchfork.</p>
+                <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">Linuxify Windows</h1>
+                <p class="leading-relaxed mb-8">A simple, no shit sherlock guide to an efficient & easy to use WSL
+                    experience on Windows for web development</p>
                 <div class="flex justify-center">
-                    <button
-                        class="inline-flex text-white bg-pink-500 border-0 py-2 px-6 focus:outline-none hover:bg-pink-600 rounded text-lg">Button</button>
-                    <button
-                        class="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg">Button</button>
+                    <a href="#get-started">
+                        <button
+                            class="inline-flex text-white bg-pink-500 border-0 py-2 px-6 focus:outline-none hover:bg-pink-600 rounded text-lg">Get
+                            Started</button>
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- heading only section -->
-    <section class="text-gray-400 bg-gray-900 body-font">
-        <div class="container px-5 py-24 mx-auto">
-            <div class="lg:w-2/3 flex flex-col sm:flex-row sm:items-center items-start mx-auto">
-                <h1 class="flex-grow sm:pr-16 text-2xl font-medium title-font text-white">Slow-carb next level
-                    shoinddgoitch ethical authentic, scenester sriracha forage.</h1>
-                <button
-                    class="flex-shrink-0 text-white bg-pink-500 border-0 py-2 px-8 focus:outline-none hover:bg-pink-600 rounded text-lg mt-10 sm:mt-0">Button</button>
-            </div>
-        </div>
-    </section>
+    <!-- add something here -->
 
     <!-- alternate image text stacking section-->
-    <section class="text-gray-400 bg-gray-900 body-font">
+    <section class="text-gray-400 bg-gray-900 body-font" id="get-started">
         <div class="container px-5 py-24 mx-auto">
             <div class="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-800 sm:flex-row flex-col">
                 <div
@@ -79,10 +67,10 @@
                     </svg>
                 </div>
                 <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
-                    <h2 class="text-white text-lg title-font font-medium mb-2">Shooting Stars</h2>
-                    <p class="leading-relaxed text-base">Blue bottle crucifix vinyl post-ironic four dollar toast vegan
-                        taxidermy. Gastropub indxgo juice poutine.</p>
-                    <a class="mt-3 text-pink-400 inline-flex items-center">Learn More
+                    <h2 class="text-white text-lg title-font font-medium mb-2">Introduction</h2>
+                    <p class="leading-relaxed text-base">What is WSL & what can you expect to accomplist at the end of
+                        this guide?</p>
+                    <a class="mt-3 text-pink-400 inline-flex items-center" href="introduction.html">Learn More
                         <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                             stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
                             <path d="M5 12h14M12 5l7 7-7 7"></path>
@@ -92,10 +80,52 @@
             </div>
             <div class="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-800 sm:flex-row flex-col">
                 <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
-                    <h2 class="text-white text-lg title-font font-medium mb-2">The Catalyzer</h2>
-                    <p class="leading-relaxed text-base">Blue bottle crucifix vinyl post-ironic four dollar toast vegan
-                        taxidermy. Gastropub indxgo juice poutine.</p>
-                    <a class="mt-3 text-pink-400 inline-flex items-center">Learn More
+                    <h2 class="text-white text-lg title-font font-medium mb-2">Rationale</h2>
+                    <p class="leading-relaxed text-base">Why should you linuxify your Windows, & why not use X
+                        alternative?</p>
+                    <a class="mt-3 text-pink-400 inline-flex items-center" href="rationale.html">Learn More
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                            <path d="M5 12h14M12 5l7 7-7 7"></path>
+                        </svg>
+                    </a>
+                </div>
+                <div
+                    class="sm:w-32 order-first sm:order-none sm:h-32 h-20 w-20 sm:ml-10 inline-flex items-center justify-center rounded-full text-pink-400 bg-gray-800 flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" class="sm:w-16 sm:h-16 w-10 h-10" viewBox="0 0 24 24">
+                        <circle cx="6" cy="6" r="3"></circle>
+                        <circle cx="6" cy="18" r="3"></circle>
+                        <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-800 sm:flex-row flex-col">
+                <div
+                    class="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full text-pink-400 bg-gray-800 flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" class="sm:w-16 sm:h-16 w-10 h-10" viewBox="0 0 24 24">
+                        <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                    </svg>
+                </div>
+                <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+                    <h2 class="text-white text-lg title-font font-medium mb-2">Installation</h2>
+                    <p class="leading-relaxed text-base">How to install WSL, a linux distribution & graphical interface
+                        support with WSLg?</p>
+                    <a class="mt-3 text-pink-400 inline-flex items-center" href="installation.html">Learn More
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                            <path d="M5 12h14M12 5l7 7-7 7"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-800 sm:flex-row flex-col">
+                <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+                    <h2 class="text-white text-lg title-font font-medium mb-2">Configuration</h2>
+                    <p class="leading-relaxed text-base">Installing software, tools you should be using, and customizing
+                        your development environment.</p>
+                    <a class="mt-3 text-pink-400 inline-flex items-center" href="configuration.html">Learn More
                         <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                             stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
                             <path d="M5 12h14M12 5l7 7-7 7"></path>
@@ -122,10 +152,10 @@
                     </svg>
                 </div>
                 <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
-                    <h2 class="text-white text-lg title-font font-medium mb-2">The 400 Blows</h2>
-                    <p class="leading-relaxed text-base">Blue bottle crucifix vinyl post-ironic four dollar toast vegan
-                        taxidermy. Gastropub indxgo juice poutine.</p>
-                    <a class="mt-3 text-pink-400 inline-flex items-center">Learn More
+                    <h2 class="text-white text-lg title-font font-medium mb-2">Guide to using WSL</h2>
+                    <p class="leading-relaxed text-base">Best practices when using WSL, and the underlying difference
+                        compared to bare metal Linux.</p>
+                    <a class="mt-3 text-pink-400 inline-flex items-center" href="guide.html">Learn More
                         <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                             stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
                             <path d="M5 12h14M12 5l7 7-7 7"></path>
@@ -133,8 +163,6 @@
                     </a>
                 </div>
             </div>
-            <button
-                class="flex mx-auto mt-20 text-white bg-pink-500 border-0 py-2 px-8 focus:outline-none hover:bg-pink-600 rounded text-lg">Button</button>
         </div>
     </section>
 
@@ -142,10 +170,7 @@
     <section class="text-gray-400 bg-gray-900 body-font">
         <div class="container px-5 py-24 mx-auto">
             <div class="flex flex-col text-center w-full mb-20">
-                <h1 class="text-2xl font-medium title-font mb-4 text-white">OUR TEAM</h1>
-                <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon brooklyn
-                    asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them.
-                </p>
+                <h1 class="text-2xl font-medium title-font mb-4 text-white">The Team</h1>
             </div>
             <div class="flex flex-wrap -m-4">
                 <div class="p-4 lg:w-1/4 md:w-1/2">
@@ -153,34 +178,8 @@
                         <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4"
                             src="https://dummyimage.com/200x200">
                         <div class="w-full">
-                            <h2 class="title-font font-medium text-lg text-white">Alper Kamu</h2>
-                            <h3 class="text-gray-500 mb-3">UI Developer</h3>
-                            <p class="mb-4">DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.
-                            </p>
-                            <span class="inline-flex">
-                                <a class="text-gray-700">
-                                    <svg fill="none" stroke="currentColor" stroke-linecap="round"
-                                        stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
-                                    </svg>
-                                </a>
-                                <a class="ml-2 text-gray-700">
-                                    <svg fill="none" stroke="currentColor" stroke-linecap="round"
-                                        stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                                        <path
-                                            d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
-                                        </path>
-                                    </svg>
-                                </a>
-                                <a class="ml-2 text-gray-700">
-                                    <svg fill="none" stroke="currentColor" stroke-linecap="round"
-                                        stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                                        <path
-                                            d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z">
-                                        </path>
-                                    </svg>
-                                </a>
-                            </span>
+                            <h2 class="title-font font-medium text-lg text-white">Mohit</h2>
+                            <h3 class="text-gray-500 mb-3">@mojitrk</h3>
                         </div>
                     </div>
                 </div>
@@ -189,34 +188,8 @@
                         <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4"
                             src="https://dummyimage.com/201x201">
                         <div class="w-full">
-                            <h2 class="title-font font-medium text-lg text-white">Holden Caulfield</h2>
-                            <h3 class="text-gray-500 mb-3">UI Developer</h3>
-                            <p class="mb-4">DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.
-                            </p>
-                            <span class="inline-flex">
-                                <a class="text-gray-700">
-                                    <svg fill="none" stroke="currentColor" stroke-linecap="round"
-                                        stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
-                                    </svg>
-                                </a>
-                                <a class="ml-2 text-gray-700">
-                                    <svg fill="none" stroke="currentColor" stroke-linecap="round"
-                                        stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                                        <path
-                                            d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
-                                        </path>
-                                    </svg>
-                                </a>
-                                <a class="ml-2 text-gray-700">
-                                    <svg fill="none" stroke="currentColor" stroke-linecap="round"
-                                        stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                                        <path
-                                            d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z">
-                                        </path>
-                                    </svg>
-                                </a>
-                            </span>
+                            <h2 class="title-font font-medium text-lg text-white">Arjun</h2>
+                            <h3 class="text-gray-500 mb-3">@Arjun-V-Srikrishnan</h3>
                         </div>
                     </div>
                 </div>
@@ -225,34 +198,8 @@
                         <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4"
                             src="https://dummyimage.com/202x202">
                         <div class="w-full">
-                            <h2 class="title-font font-medium text-lg text-white">Atticus Finch</h2>
-                            <h3 class="text-gray-500 mb-3">UI Developer</h3>
-                            <p class="mb-4">DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.
-                            </p>
-                            <span class="inline-flex">
-                                <a class="text-gray-700">
-                                    <svg fill="none" stroke="currentColor" stroke-linecap="round"
-                                        stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
-                                    </svg>
-                                </a>
-                                <a class="ml-2 text-gray-700">
-                                    <svg fill="none" stroke="currentColor" stroke-linecap="round"
-                                        stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                                        <path
-                                            d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
-                                        </path>
-                                    </svg>
-                                </a>
-                                <a class="ml-2 text-gray-700">
-                                    <svg fill="none" stroke="currentColor" stroke-linecap="round"
-                                        stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                                        <path
-                                            d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z">
-                                        </path>
-                                    </svg>
-                                </a>
-                            </span>
+                            <h2 class="title-font font-medium text-lg text-white">Adithya</h2>
+                            <h3 class="text-gray-500 mb-3">@SarcasticNinja</h3>
                         </div>
                     </div>
                 </div>
@@ -261,34 +208,8 @@
                         <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4"
                             src="https://dummyimage.com/203x203">
                         <div class="w-full">
-                            <h2 class="title-font font-medium text-lg text-white">Henry Letham</h2>
-                            <h3 class="text-gray-500 mb-3">UI Developer</h3>
-                            <p class="mb-4">DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.
-                            </p>
-                            <span class="inline-flex">
-                                <a class="text-gray-700">
-                                    <svg fill="none" stroke="currentColor" stroke-linecap="round"
-                                        stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
-                                    </svg>
-                                </a>
-                                <a class="ml-2 text-gray-700">
-                                    <svg fill="none" stroke="currentColor" stroke-linecap="round"
-                                        stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                                        <path
-                                            d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
-                                        </path>
-                                    </svg>
-                                </a>
-                                <a class="ml-2 text-gray-700">
-                                    <svg fill="none" stroke="currentColor" stroke-linecap="round"
-                                        stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                                        <path
-                                            d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z">
-                                        </path>
-                                    </svg>
-                                </a>
-                            </span>
+                            <h2 class="title-font font-medium text-lg text-white">Balaganesh</h2>
+                            <h3 class="text-gray-500 mb-3">@Balaganesh003</h3>
                         </div>
                     </div>
                 </div>
@@ -309,13 +230,12 @@
             </a>
             <p class="text-sm text-gray-400 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-800 sm:py-2 sm:mt-0 mt-4">©
                 2022 —
-                <a href="https://twitter.com/knyttneve" class="text-gray-500 ml-1" target="_blank"
+                <a href="https://github.com/mojitrk/linuxify-windows" class="text-gray-500 ml-1" target="_blank"
                     rel="noopener noreferrer">@mojitrk, @Arjun-V-Srikrishnan, @SarcasticNinja, @Balaganesh003</a>
             </p>
 
         </div>
     </footer>
-
 </body>
 
 </html>

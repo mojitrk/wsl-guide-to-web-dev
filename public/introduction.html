@@ -1,140 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home | Linuxify Windows</title>
+    <title>Introduction | Linuxify Windows</title>
 
     <link href="tailwind.css" rel="stylesheet" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2/dist/tailwind.min.css"
-      rel="stylesheet"
-      type="text/css"
-    />
-  </head>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2/dist/tailwind.min.css" rel="stylesheet" type="text/css" />
+</head>
 
-  <body>
+<body>
     <!-- navigation bar -->
     <header class="text-gray-400 bg-gray-900 body-font">
-      <div
-        class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center"
-      >
-        <a
-          class="flex title-font font-medium items-center text-white mb-4 md:mb-0"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            stroke="currentColor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            class="w-10 h-10 text-white p-2 bg-pink-500 rounded-full"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"
-            ></path>
-          </svg>
-          <span class="ml-3 text-xl">Linuxify Windows</span>
-        </a>
-        <nav
-          class="md:ml-auto flex flex-wrap items-center text-base justify-center"
-        >
-          <a href="#" class="mr-5 hover:text-white">Introduction</a>
-          <a href="#" class="mr-5 hover:text-white">Rationale</a>
-          <a href="#" class="mr-5 hover:text-white">Installation</a>
-          <a href="#" class="mr-5 hover:text-white">Configuration</a>
-          <a href="#" class="mr-5 hover:text-white">Guide</a>
-        </nav>
-      </div>
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+            <a class="flex title-font font-medium items-center text-white mb-4 md:mb-0" href="index.html">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round"
+                    stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-pink-500 rounded-full"
+                    viewBox="0 0 24 24">
+                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                </svg>
+                <span class="ml-3 text-xl">Linuxify Windows</span>
+            </a>
+            <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+                <a class="mr-5 hover:text-white" href="introduction.html">Introduction</a>
+                <a class="mr-5 hover:text-white" href="rationale.html">Rationale</a>
+                <a class="mr-5 hover:text-white" href="installation.html">Installation</a>
+                <a class="mr-5 hover:text-white" href="configuration.html">Configuration</a>
+                <a class="mr-5 hover:text-white" href="guide.html">Guide</a>
+            </nav>
+        </div>
     </header>
 
     <!-- centered hero -->
     <section class="text-gray-400 bg-gray-900 body-font">
-      <div
-        class="container mx-auto flex px-5 py-24 items-center justify-center flex-col"
-      >
-        <img
-          class="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded"
-          alt="hero"
-          src="https://www.bleepstatic.com/content/hl-images/2020/08/28/wsl.jpg"
-        />
-        <div class="text-center lg:w-2/3 w-full">
-          <h1
-            class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white"
-          >
-            What is WSL??
-          </h1>
-          <p class="leading-relaxed mb-8">
-            Windows Subsystem for Linux is commonly known has WSL. It allows the
-            user to run their favorite Linux command line tools, Utilities,
-            Applications natively on Windows. without the overhead of a
-            traditional virtual machine or dual-boot setup. You can also access
-            the windows files from that environment and run windows executables.
-          </p>
+        <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
+            <img class="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded" alt="hero"
+                src="https://www.bleepstatic.com/content/hl-images/2020/08/28/wsl.jpg" />
+            <div class="text-center lg:w-2/3 w-full">
+                <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
+                    What is WSL??
+                </h1>
+                <p class="leading-relaxed mb-8">
+                    Windows Subsystem for Linux is commonly known has WSL. It allows the
+                    user to run their favorite Linux command line tools, Utilities,
+                    Applications natively on Windows. without the overhead of a
+                    traditional virtual machine or dual-boot setup. You can also access
+                    the windows files from that environment and run windows executables.
+                </p>
+            </div>
         </div>
-      </div>
     </section>
 
     <!-- heading only section -->
     <section class="text-gray-400 bg-gray-900 body-font">
-      <div
-        class="container mx-auto flex px-5 py-24 items-center justify-center flex-col"
-      >
-        <div class="text-center lg:w-2/3 w-full">
-          <h1
-            class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white"
-          >
-            What do you expect to accomplish at the end of this guide?
-          </h1>
-          <br class="leading-relaxed mb-8">
-            To install and setup the Linux Environment natively on your windows
-            System <br>but still you can access the both windows and Linux
-          </p>
+        <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
+            <div class="text-center lg:w-2/3 w-full">
+                <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
+                    What do you expect to accomplish at the end of this guide?
+                </h1>
+                <br class="leading-relaxed mb-8">
+                To install and setup the Linux Environment natively on your windows
+                System <br>but still you can access the both windows and Linux
+                </p>
+            </div>
         </div>
-      </div>
     </section>
-
 
     <!-- footer -->
     <footer class="text-gray-400 bg-gray-900 body-font">
-      <div
-        class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col"
-      >
-        <a
-          class="flex title-font font-medium items-center md:justify-start justify-center text-white"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            stroke="currentColor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            class="w-10 h-10 text-white p-2 bg-pink-500 rounded-full"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"
-            ></path>
-          </svg>
-          <span class="ml-3 text-xl">Linuxify Windows</span>
-        </a>
-        <p
-          class="text-sm text-gray-400 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-800 sm:py-2 sm:mt-0 mt-4"
-        >
-          © 2022 —
-          <a
-            href="https://twitter.com/knyttneve"
-            class="text-gray-500 ml-1"
-            target="_blank"
-            rel="noopener noreferrer"
-            >@mojitrk, @Arjun-V-Srikrishnan, @SarcasticNinja, @Balaganesh003</a
-          >
-        </p>
-      </div>
+        <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+            <a class="flex title-font font-medium items-center md:justify-start justify-center text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round"
+                    stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-pink-500 rounded-full"
+                    viewBox="0 0 24 24">
+                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                </svg>
+                <span class="ml-3 text-xl">Linuxify Windows</span>
+            </a>
+            <p class="text-sm text-gray-400 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-800 sm:py-2 sm:mt-0 mt-4">©
+                2022 —
+                <a href="https://github.com/mojitrk/linuxify-windows" class="text-gray-500 ml-1" target="_blank"
+                    rel="noopener noreferrer">@mojitrk, @Arjun-V-Srikrishnan, @SarcasticNinja, @Balaganesh003</a>
+            </p>
+        </div>
     </footer>
-  </body>
+</body>
+
 </html>
