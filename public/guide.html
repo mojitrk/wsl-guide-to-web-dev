@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guide | Linuxify Windows</title>
+
+    <link href="tailwind.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2/dist/tailwind.min.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
@@ -29,6 +32,131 @@
             </nav>
         </div>
     </header>
+
+    <!-- heading only section -->
+    <section class="text-gray-400 bg-gray-900 body-font">
+        <div class="container px-5 py-24 mx-auto">
+            <div class="lg:w-2/3 flex flex-col sm:flex-row sm:items-center items-start mx-auto">
+                <br><br><br>
+                <h1 class="flex-grow sm:pr-16 text-2xl font-medium title-font text-white text-center">Best practices
+                    when using WSL
+                </h1>
+            </div>
+        </div>
+    </section>
+
+    <!-- stacked learn more section -->
+    <section class="text-gray-400 bg-gray-900 body-font overflow-hidden">
+        <div class="container px-5 py-24 mx-auto">
+            <div class="-my-8 divide-y-2 divide-gray-800">
+                <div class="py-8 flex flex-wrap md:flex-nowrap">
+                    <div class="md:flex-grow">
+                        <h2 class="text-2xl font-medium text-white title-font mb-2">Saving Project Files</h2>
+                        <p class="leading-relaxed">Always save files in the Linux subsystem as opposed to saving them in
+                            the Windows file system for better input-output performance.</p>
+                        <a class="text-pink-400 inline-flex items-center mt-4"
+                            href="https://vxlabs.com/2019/12/06/wsl2-io-measurements/">Comparing filesystem performance
+                            between WSL 1 and WSL 2
+                            <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M5 12h14"></path>
+                                <path d="M12 5l7 7-7 7"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="py-8 flex border-t-2 border-gray-800 flex-wrap md:flex-nowrap">
+                    <div class="md:flex-grow">
+                        <h2 class="text-2xl font-medium text-white title-font mb-2">Accessing Files from Windows</h2>
+                        <p class="leading-relaxed">Use `\\wsl$` to access the linux file system from Windows Explorer.
+                        </p>
+                        <a class="text-pink-400 inline-flex items-center mt-4"
+                            href="https://ling123labs.com/posts/WSL-files-in-Windows-and-vice-versa/">Accessing WSL
+                            files using a network symlink
+                            <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M5 12h14"></path>
+                                <path d="M12 5l7 7-7 7"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="py-8 flex border-t-2 border-gray-800 flex-wrap md:flex-nowrap">
+                    <div class="md:flex-grow">
+                        <h2 class="text-2xl font-medium text-white title-font mb-2">Case Sensitivity</h2>
+                        <p class="leading-relaxed">Files and folders saved in Linux are case sensitive, while Windows
+                            isn't.</p>
+                        <a class="text-pink-400 inline-flex items-center mt-4"
+                            href="https://docs.microsoft.com/en-us/windows/wsl/case-sensitivity#:~:text=Directories%20in%20the%20WSL%20(Linux,the%20fsutil.exe%20tool).">Common
+                            errors while moving files
+                            <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M5 12h14"></path>
+                                <path d="M12 5l7 7-7 7"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="py-8 flex flex-wrap md:flex-nowrap">
+                    <div class="md:flex-grow">
+                        <h2 class="text-2xl font-medium text-white title-font mb-2">File Path Limit</h2>
+                        <p class="leading-relaxed">There is a limit to the maximum file path length in Windows, to be
+                            specific, 256 characters.</p>
+                        <a class="text-pink-400 inline-flex items-center mt-4">Learn More
+                            <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M5 12h14"></path>
+                                <path d="M12 5l7 7-7 7"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="py-8 flex flex-wrap md:flex-nowrap">
+                    <div class="md:flex-grow">
+                        <h2 class="text-2xl font-medium text-white title-font mb-2">File Permissions</h2>
+                        <p class="leading-relaxed">File access permissions with `chmod` do not carry over from Windows
+                            to Linux.</p>
+                        <a class="text-pink-400 inline-flex items-center mt-4">Learn More
+                            <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M5 12h14"></path>
+                                <path d="M12 5l7 7-7 7"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="py-8 flex flex-wrap md:flex-nowrap">
+                    <div class="md:flex-grow">
+                        <h2 class="text-2xl font-medium text-white title-font mb-2">Metadata</h2>
+                        <p class="leading-relaxed">Metadata files like `.ZoneIdentifier` will be created when moving
+                            downloaded files from Windows to Linux.</p>
+                        <a class="text-pink-400 inline-flex items-center mt-4">Learn More
+                            <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M5 12h14"></path>
+                                <path d="M12 5l7 7-7 7"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- right side image hero -->
+    <section class="text-gray-400 bg-gray-900 body-font">
+        <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+            <div
+                class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+                <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">WSL 2 Architecture Overview
+                </h1>
+                <p class="mb-8 leading-relaxed">WSL 2 runs directly on the host hardware unlike type 2 hypervisors.</p>
+            </div>
+            <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+                <img class="object-cover object-center rounded" alt="hero" src="img/wsl-architecture.jpg">
+            </div>
+        </div>
+    </section>
 
     <!-- footer -->
     <footer class="text-gray-400 bg-gray-900 body-font">
