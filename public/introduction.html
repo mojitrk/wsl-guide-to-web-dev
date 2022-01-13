@@ -37,18 +37,13 @@
     <section class="text-gray-400 bg-gray-900 body-font">
         <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
             <img class="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded" alt="hero"
-                src="https://www.bleepstatic.com/content/hl-images/2020/08/28/wsl.jpg" />
+                src="https://dummyimage.com/720x600">
             <div class="text-center lg:w-2/3 w-full">
-                <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
-                    What is WSL??
-                </h1>
-                <p class="leading-relaxed mb-8">
-                    Windows Subsystem for Linux is commonly known has WSL. It allows the
-                    user to run their favorite Linux command line tools, Utilities,
-                    Applications natively on Windows. without the overhead of a
-                    traditional virtual machine or dual-boot setup. You can also access
-                    the windows files from that environment and run windows executables.
-                </p>
+                <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">What is Windows Subsystem for
+                    Linux?</h1>
+                <p class="leading-relaxed mb-8">The Windows Subsystem for Linux lets developers run a GNU/Linux
+                    environment including most command-line tools, utilities, and applications directly on Windows,
+                    unmodified, without the overhead of a traditional virtual machine or dualboot setup.</p>
             </div>
         </div>
     </section>
@@ -61,9 +56,56 @@
                     What do you expect to accomplish at the end of this guide?
                 </h1>
                 <br class="leading-relaxed mb-8">
-                To install and setup the Linux Environment natively on your windows
-                System <br>but still you can access the both windows and Linux
+                To install Windows Subsystem for Linux, set up a Linux development environment natively on Windows,
+                access files from both file systems seamlessly, configure tools and software needed for web development
+                and get an efficient workflow going in Windows itself.
                 </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- text only section -->
+    <section class="text-gray-400 bg-gray-900 body-font">
+        <div class="container px-5 py-24 mx-auto flex flex-wrap">
+            <h2 class="sm:text-3xl text-2xl text-white font-medium title-font mb-2 md:w-2/5">What is WSL 2?</h2>
+            <div class="md:w-3/5 md:pl-6">
+                <p class="leading-relaxed text-base">WSL 2 is a new version of the Windows Subsystem for Linux
+                    architecture that powers the Windows Subsystem for Linux to run ELF64 Linux binaries on Windows. Its
+                    primary goals are to increase file system performance, as well as adding full system call
+                    compatibility.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- split text differentiation section -->
+    <section class="text-gray-400 body-font bg-gray-900">
+        <div class="container px-5 py-24 mx-auto">
+            <div class="flex flex-col text-center w-full mb-20">
+                <h2 class="text-xs text-pink-400 tracking-widest font-medium title-font mb-1">WHAT'S NEW IN</h2>
+                <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">Windows Subsystem for Linux 2
+                </h1>
+            </div>
+            <div class="flex flex-wrap">
+                <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-800">
+                    <h2 class="text-lg sm:text-xl text-white font-medium title-font mb-2">Managed with Hyper-V</h2>
+                    <p class="leading-relaxed text-base mb-4">WSL 2 can be managed as a full fledged virtual machine
+                        using Hyper-V, while WSL 1 is merely a compatibility layer on top on Windows</p>
+                </div>
+                <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-800">
+                    <h2 class="text-lg sm:text-xl text-white font-medium title-font mb-2">Full Linux Kernel</h2>
+                    <p class="leading-relaxed text-base mb-4">WSL 2 uses a complete Linux kernel, albeit one modified by
+                        Microsoft.</p>
+                </div>
+                <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-800">
+                    <h2 class="text-lg sm:text-xl text-white font-medium title-font mb-2">File IO Performance</h2>
+                    <p class="leading-relaxed text-base mb-4">File IO performance has greatly increased in WSL 2, thanks
+                        to the OS files being saved in the WSL filesystem, instead of the Windows filesystem.</p>
+                </div>
+                <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-800">
+                    <h2 class="text-lg sm:text-xl text-white font-medium title-font mb-2">System Call Compatibility</h2>
+                    <p class="leading-relaxed text-base mb-4">WSL 2 offers full system call compatibility, allowing much
+                        needed apps like Docker to work on it.</p>
+                </div>
             </div>
         </div>
     </section>
