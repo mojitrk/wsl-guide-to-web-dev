@@ -29,6 +29,117 @@
         </div>
     </header>
 
+    <!-- left hero section -->
+    <section class="text-gray-400 bg-gray-900 body-font">
+        <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+            <div
+                class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+                <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">Don't be a clown, <br>
+                    use Visual Studio Code
+                </h1>
+                <p class="mb-8 leading-relaxed">Of course, you can use any code editor or IDE (vim and emacs users are
+                    quaking in their boots right now), but Visual Studio Code does have the best support for development
+                    in WSL. One with excellent remote development support is Jetbrains IDEs, with Gateway. Just make
+                    sure to link your interpreters, $PATHs and whatnot to the WSL's variant's path, not your Windows'
+                    one.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- tiny step section -->
+    <section class="text-gray-400 bg-gray-900 body-font">
+        <div class="container px-5 py-24 mx-auto flex flex-wrap">
+            <div class="flex flex-wrap w-full">
+                <div class="lg:w-2/5 md:w-1/2 md:pr-10 md:py-6">
+                    <div class="flex relative pb-12">
+                        <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
+                            <div class="h-full w-1 bg-gray-800 pointer-events-none"></div>
+                        </div>
+                        <div
+                            class="flex-shrink-0 w-10 h-10 rounded-full bg-purple-500 inline-flex items-center justify-center text-white relative z-10">
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                            </svg>
+                        </div>
+                        <div class="flex-grow pl-4">
+                            <p class="leading-relaxed">Install Visual Studio Code in Windows. <br>
+                                "$ winget install -e --id Microsoft.VisualStudioCode"</p>
+                        </div>
+                    </div>
+                    <div class="flex relative pb-12">
+                        <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
+                            <div class="h-full w-1 bg-gray-800 pointer-events-none"></div>
+                        </div>
+                        <div
+                            class="flex-shrink-0 w-10 h-10 rounded-full bg-purple-500 inline-flex items-center justify-center text-white relative z-10">
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                            </svg>
+                        </div>
+                        <div class="flex-grow pl-4">
+                            <p class="leading-relaxed">Install the "Remote Development - WSL" extension. <br>
+                                This will let you work in WSL with WSL-specific tooling.</p>
+                        </div>
+                    </div>
+                    <div class="flex relative pb-12">
+                        <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
+                            <div class="h-full w-1 bg-gray-800 pointer-events-none"></div>
+                        </div>
+                        <div
+                            class="flex-shrink-0 w-10 h-10 rounded-full bg-purple-500 inline-flex items-center justify-center text-white relative z-10">
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                <circle cx="12" cy="5" r="3"></circle>
+                                <path d="M12 22V8M5 12H2a10 10 0 0020 0h-3"></path>
+                            </svg>
+                        </div>
+                        <div class="flex-grow pl-4">
+                            <p class="leading-relaxed">Connect Visual Studio Code to WSL. <br>
+                                Click on the connection symbol on the bottom-left and select "WSL - Ubuntu".</p>
+                        </div>
+                    </div>
+                    <div class="flex relative pb-12">
+                        <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
+                            <div class="h-full w-1 bg-gray-800 pointer-events-none"></div>
+                        </div>
+                        <div
+                            class="flex-shrink-0 w-10 h-10 rounded-full bg-purple-500 inline-flex items-center justify-center text-white relative z-10">
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+                                <circle cx="12" cy="7" r="4"></circle>
+                            </svg>
+                        </div>
+                        <div class="flex-grow pl-4">
+                            <p class="leading-relaxed">Transfer any extensions you need to Remote WSL. <br>
+                                Since the Remote Development extension basically installs a extension server inside WSL,
+                                you'll have to transfer any extensions you need from Windows to WSL. Fortunately, it is
+                                just a one-click process, using the tiny cloud icon in the Extensions tab.</p>
+                        </div>
+                    </div>
+                    <div class="flex relative">
+                        <div
+                            class="flex-shrink-0 w-10 h-10 rounded-full bg-purple-500 inline-flex items-center justify-center text-white relative z-10">
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                                <path d="M22 4L12 14.01l-3-3"></path>
+                            </svg>
+                        </div>
+                        <div class="flex-grow pl-4">
+                            <h2 class="font-medium title-font text-sm text-white mb-1 tracking-wider">DONE</h2>
+                            <p class="leading-relaxed">You're all set to go!</p>
+                        </div>
+                    </div>
+                </div>
+                <img class="lg:w-3/5 md:w-1/2 object-cover object-center rounded-lg md:mt-0 mt-12"
+                    src="img/vscode-with-wsl.png" alt="step">
+            </div>
+        </div>
+    </section>
+
     <!-- heading only section -->
     <section class="text-gray-400 bg-gray-900 body-font">
         <div class="container px-5 py-24 mx-auto">
@@ -53,6 +164,22 @@
                         <a class="text-pink-400 inline-flex items-center mt-4"
                             href="https://vxlabs.com/2019/12/06/wsl2-io-measurements/">Comparing filesystem performance
                             between WSL 1 and WSL 2
+                            <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M5 12h14"></path>
+                                <path d="M12 5l7 7-7 7"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="py-8 flex flex-wrap md:flex-nowrap">
+                    <div class="md:flex-grow">
+                        <h2 class="text-2xl font-medium text-white title-font mb-2">Customize Windows Terminal</h2>
+                        <p class="leading-relaxed">Learn how to customize the Windows Terminal experience and the zsh
+                            shell. Can't be caught with an ugly terminal & your pants down, can we?</p>
+                        <a class="text-pink-400 inline-flex items-center mt-4"
+                            href="https://dev.to/shettykaran21/customize-windows-terminal-with-wsl2-od9">Windows
+                            Terminal Customization Guide
                             <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
                                 fill="none" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M5 12h14"></path>
@@ -135,21 +262,23 @@
                         </a>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- right side image hero -->
-    <section class="text-gray-400 bg-gray-900 body-font">
-        <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
-            <div
-                class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-                <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">WSL 2 Architecture Overview
-                </h1>
-                <p class="mb-8 leading-relaxed">WSL 2 runs directly on the host hardware unlike type 2 hypervisors.</p>
-            </div>
-            <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-                <img class="object-cover object-center rounded" alt="hero" src="img/wsl-architecture.jpg">
+                <div class="py-8 flex flex-wrap md:flex-nowrap">
+                    <div class="md:flex-grow">
+                        <h2 class="text-2xl font-medium text-white title-font mb-2">Startup Configuration</h2>
+                        <p class="leading-relaxed">Set configuration settings like network addresses, disk mount points,
+                            interop support, etc at startup, in /etc/wsl.conf.
+                        </p>
+                        <a class="text-pink-400 inline-flex items-center mt-4"
+                            href="https://docs.microsoft.com/en-us/windows/wsl/wsl-config#set-wsl-launch-settings">Set
+                            WSL Launch Settings
+                            <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M5 12h14"></path>
+                                <path d="M12 5l7 7-7 7"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
