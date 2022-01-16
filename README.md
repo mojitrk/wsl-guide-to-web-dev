@@ -11,7 +11,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/mojitrk/linuxify-windows">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="public/img/header.png" alt="Logo" width="80" height="80">
   </a>
 
 <h3 align="center">Linuxify Windows</h3>
